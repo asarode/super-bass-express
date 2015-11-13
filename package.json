@@ -1,0 +1,20 @@
+{
+  "name": "super-bass-express",
+  "version": "0.1.0",
+  "description": "A starter for ES6 + Express",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --source-maps",
+    "build:watch": "babel src --out-dir dist --source-maps --watch",
+    "start": "nodemon dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjun Sarode <sarodearjun57@gmail.com> (http://arjun.ink/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "babel": "^6.1.18"
+  }
+}
