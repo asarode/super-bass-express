@@ -1,20 +1,26 @@
 {
-  "name": "super-bass-express",
+  "name": "expanse-server",
   "version": "0.1.0",
-  "description": "A starter for ES6 + Express",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --source-maps",
-    "build:watch": "babel src --out-dir dist --source-maps --watch",
-    "start": "nodemon dist/server.js",
+    "build": "gulp babel",
+    "build:watch": "gulp",
+    "start": "nodemon -d 1 dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Arjun Sarode <sarodearjun57@gmail.com> (http://arjun.ink/)",
+  "author": "Arjun Sarode <sarodearjun57@gmail.com> (http://arjunsarode.com/)",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3"
   },
   "devDependencies": {
-    "babel": "^6.1.18"
+    "babel-core": "^6.1.19",
+    "babel-preset-es2015": "^6.1.18",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "source-map-support": "^0.3.3"
   }
 }
